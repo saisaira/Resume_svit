@@ -1,0 +1,111 @@
+.main{
+  /* width: 100%; */
+  border: 2px solid #000;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* justify-content: center; */
+}
+.left{
+  /* width: 30%; */
+  flex: 1;
+  background-color: #999;
+border: 2px solid #000;
+margin: 5px;
+padding: 5px;
+}
+.right{
+  /* width: 70%; */
+  background-color: #888;
+  flex: 3;
+border: 2px solid #000;
+margin: 5px;
+}
+/* media queiries(1024,1280,768,480)
+1280-1024 : Desktop
+1024-768  : Tablet(Landscape)
+768-480  : Tablet
+480     : mobile landscape (or)smaller device
+*/
+/* @media screen and (max-width:480px) {
+  } */
+  @media only screen and (max-width:480px) {
+    .main{
+
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+    .left{
+      background-color: #c45e45;
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px;
+    }
+    .right{
+      background-color: #c45e45;
+    border: 2px solid #000;
+    margin: 5px;
+  }
+  }
+  @media only screen and (min-width:481px) and (max-width:768px) {
+    main{
+      border: 2px solid #000;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      /* justify-content: center; */
+    }
+    .left{
+      background-color: #9876;
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px;
+    }
+    .right{
+      background-color: #7654;
+    border: 2px solid #000;
+    margin: 5px;
+    }
+  }
+  @media only screen and (min-width:769px) and (max-width:1024px) {
+    .main{
+      border: 2px solid #000;
+      display: flex;
+      flex-wrap: wrap;
+
+      /* justify-content: center; */
+    }
+    .left{
+      background-color: blue;
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px;
+    }
+    .right{
+      background-color: green;
+    border: 2px solid #000;
+    margin: 5px;
+    }
+  }
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+  .main{
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  .left{
+    background-color: #8776;
+  border: 2px solid #000;
+  margin: 5px;
+  padding: 5px;
+  }
+  .right{
+    background-color: #9976;
+  border: 2px solid #000;
+  margin: 5px;
+  }
+}
